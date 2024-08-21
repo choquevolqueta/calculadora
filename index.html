@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <h2>Introduzca la operacion a realizar, y despues el otro numero. Apreta "resultado" para conocer el resultado</h2>
+    
+    <div class="o">
+        <input type="radio" name="operador" id= "suma" class="ope"/>
+        <label class="elOperador" for="suma">
+        <p>Suma</p>
+        </label>
+        <input type="radio" name="operador" id= "resta" class="ope"/>
+        <label class="elOperador" for="resta">
+        <p>Resta</p>
+        </label>
+        <input type="radio" name="operador" id= "multiplicacion" class="ope"/>
+        <label class="elOperador" for="multiplicacion">
+        <p>Multiplicacion</p>
+        </label>
+        <input type="radio" name="operador" id= "division" class="ope"/>
+        <label class="elOperador" for="division">
+        <p>Division</p>
+        </label>
+    </div>
+    
+    
+    <div>
+        <input type="number" id="primo-numero">
+        <label class="inputRes" for="primo-numero">
+        <p>Primer numero</p>
+    
+        <input type="number" id="secondo-numero">
+        <label class="inputRes" for="secondo-numero">
+        <p>Segundo numero</p>
+    </div>
+    <button id="igual">Resultado</button>
+    <input type="number" id="resultado">
+    <label class="inputRes" for="resultado">
+        <p>Resultado</p>
+    <button id="salir" onclick="salir()">Salir</button>
+    
+    <script src="app.js"></script>
+</body>
+</html>
